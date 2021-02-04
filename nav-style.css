@@ -1,0 +1,36 @@
+#nav-bar {
+    display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
+    justify-content: space-around;              /* every item will have space before, between and after them. */
+    align-items: center;                        /* aligns items at the center of the container */
+    min-height: 60px;                           /* minimum height of the nav-bar */
+}
+
+#nav-bar ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;     
+    text-transform: uppercase;
+}
+
+#nav-bar li {
+    display: inline;
+    list-style: none;
+    padding: 10px 0px 10px 10px;
+    margin: 0px;
+}
+
+#nav-bar li:hover {
+    background-color: white;
+}
+
+#nav-bar li:last-child {
+    padding-right: 10px;
+}
+
+#nav-bar a {
+    color: rgb(85, 233, 188);
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
