@@ -1,5 +1,6 @@
 .main-body {
     background-color: black;
+    box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -13,6 +14,6 @@ p {
 }
 
 hr {
-    color: rgb(85, 233, 188);
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
