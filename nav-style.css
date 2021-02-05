@@ -1,11 +1,11 @@
-#nav-bar {
+.nav-bar {
     display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
     justify-content: space-around;              /* every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
     min-height: 8vh;                            /* minimum height of the nav-bar */
 }
 
-#nav-bar ul {
+.nav-list {
     margin: 0px;
     padding: 0px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;     
@@ -13,7 +13,7 @@
 
 }
 
-#nav-bar li {
+.nav-list li {
     display: inline;
     list-style: none;
     padding: 10px 0px 10px 10px;
@@ -21,15 +21,15 @@
     width: 30%;                                 /* nav bar items always occupy 30% of the width of the screen */
 }
 
-#nav-bar li:hover {
+.nav-list li:hover {
     background-color: white;
 }
 
-#nav-bar li:last-child {
+.nav-list li:last-child {
     padding-right: 10px;
 }
 
-#nav-bar a {
+.nav-list a {
     color: rgb(85, 233, 188);
     font-size: 1.5em;
     text-decoration: none;

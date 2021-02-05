@@ -11,30 +11,35 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 900px) {              /* this defines that the menu shows up when the screen size is under 900px */
+@media screen and (max-width: 1024px) {              /* this defines that the menu shows up when the screen size is under 900px */
     body {
         overflow-x: hidden;                         /* unables the browser to scroll to the hidden burger menu (transform: translateX(100%) */
         max-width: 100%;                            /* */
     }
 
-    #nav-bar ul {
+    .nav-list {
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 10.5vh;
-        width: 50%;
+        width: 100%;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);                /* moves the entire burger menu off the screen, to stay hidden */
+        transition: transform 0.5s ease-in;
     }
 
-    #nav-bar li {
+    .nav-list li {
         opacity: 0;                                 /* hides the burger menu elements */
     }
 
     .burger {
         display: block;                             /* makes the burger menu appear */
     }
+}
+
+.nav-active {
+    transform: translateX(0%);
 }

@@ -10,21 +10,28 @@
         <link rel = "icon" href = "favicon-32x32.png" type = "image/x-icon">
         <link rel = "stylesheet" href = "body-style.css">
         <link rel = "stylesheet" href = "nav-style.css">
+        <link rel = "stylesheet" href = "burger-menu-style.css">
         <title> Eduardo Miranda | Digital Portfolio </title>
     </head>
 
     <body class = "main-body">
         <header>
-            <nav id = "nav-bar">
-                <div id = "top-logo" >
+            <nav class = "nav-bar">
+                <div>
                     <a href = "index.html"><img src = "logo_transparent_short.png" alt = "Logo" width = "80"></a>
                 </div>
                 
-                <ul>
+                <ul class = "nav-list">
                     <li><a href = "index.html"> Home </a></li>
                     <li><a href = "#"> About </a></li>
                     <li><a href = "contact.html"> Contact </a></li>
                 </ul>
+
+                <div class = "burger">
+                    <div class = "line1"> </div>
+                    <div class = "line2"> </div>
+                    <div class = "line3"> </div>
+                </div>
             </nav>
             <hr>
         </header>
@@ -33,8 +40,10 @@
             
         </main>
 
-        <footer id = "footer-bar">
+        <footer class = "footer-bar">
             <!-- <p> &copy Eduardo Miranda. All Rights Reserved. </p> -->
         </footer>
+        
+        <script src = "app.js"></script>
     </body>
 </html>
