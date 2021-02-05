@@ -11,7 +11,7 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 1024px) {              /* this defines that the menu shows up when the screen size is under 900px */
+@media screen and (max-width: 768px) {              /* this defines that the menu shows up when the screen size is under 900px */
     body {
         overflow-x: hidden;                         /* unables the browser to scroll to the hidden burger menu (transform: translateX(100%) */
         max-width: 100%;                            /* */
