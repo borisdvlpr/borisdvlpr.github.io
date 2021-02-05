@@ -3,11 +3,10 @@
     cursor: pointer;                                /* adds a pointer to the burger menu, which makes it clickable */
 }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    color: rgb(85, 233, 188);
-    background-color: rgb(85, 233, 188);
+.burger div {                                       /* defines the 3 lines of the burger menu "icon" */
+    width: 25px;                                    /* width of each stripe */
+    height: 3px;                                    /* height of each stripe */
+    background-color: rgb(80, 193, 154);          /* defines the color of the burger menu "icon" */
     margin: 5px;
 }
 
@@ -21,7 +20,7 @@
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 10.5vh;
+        top: 9vh;
         width: 100%;
         background-color: white;
         display: flex;
@@ -42,4 +41,16 @@
 
 .nav-active {
     transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

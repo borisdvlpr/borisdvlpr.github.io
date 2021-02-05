@@ -1,19 +1,19 @@
-.main-body {
-    background-color: black;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
+.main-body {
+    background-color: #1f2833;
+}
+
 h1, h2, h3 {
-    color: rgb(85, 233, 188);
+    color: rgb(80, 193, 154);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 p {
-    color: rgb(85, 233, 188);
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-hr {
-    color: white;
+    color: rgb(80, 193, 154);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }

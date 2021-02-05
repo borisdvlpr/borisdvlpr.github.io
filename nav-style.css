@@ -1,8 +1,8 @@
 .nav-bar {
     display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
-    justify-content: space-around;              /* every item will have space before, between and after them. */
+    justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
-    min-height: 8vh;                            /* minimum height of the nav-bar */
+    min-height: 9vh;                            /* minimum height of the nav-bar */
 }
 
 .nav-list {
@@ -14,9 +14,9 @@
 }
 
 .nav-list li {
-    display: inline;
-    list-style: none;
-    padding: 10px 0px 10px 10px;
+    display: inline;                            /* items are positioned inline */
+    list-style: none;                           /* removes any list style, like the dots */
+    padding: 15px 0px 10px 10px;
     margin: 0px;
     width: 30%;                                 /* nav bar items always occupy 30% of the width of the screen */
 }
@@ -26,11 +26,11 @@
 }
 
 .nav-list li:last-child {
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 .nav-list a {
-    color: rgb(85, 233, 188);
+    color: rgb(80, 193, 154);
     font-size: 1.5em;
     text-decoration: none;
     letter-spacing: 3px;
