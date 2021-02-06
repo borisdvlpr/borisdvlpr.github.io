@@ -1,0 +1,9 @@
+* {
+    margin: 0;                                  /* by removing all margin and padding, it's easier to give margins and paddings individually. */
+    padding: 0;
+    box-sizing: border-box;                     /* */
+}
+
+body {
+    background-color: black;
+}

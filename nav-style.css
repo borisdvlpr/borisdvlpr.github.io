@@ -1,46 +1,42 @@
+/********************** Nav Bar ********************+*/
 .nav-bar {
-    background-color: rgb(31, 40, 51);
-    margin: 0px;
-    padding: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
     justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
     min-height: 10.5vh;                         /* minimum height of the nav-bar */
+    background-color: rgb(31, 40, 51);
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
 }
 
 .main-logo {
-    margin-top: 3.5px;
+    margin-top: 3px;
 }
 
-.nav-list {
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;     
-    text-transform: uppercase;
-
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;                                 /* nav bar will occupy 30% of the space where it's inserted in */
 }
 
-.nav-list li {
-    display: inline;                            /* items are positioned inline */
+.nav-links li {
     list-style: none;                           /* removes any list style, like the dots */
-    padding: 15px 0px 10px 10px;
-    margin: 0px;
-    width: 30%;                                 /* nav bar items always occupy 30% of the width of the screen */
+    padding: 9px 9px 9px 9px;
+    border-radius: 13px;
 }
 
-.nav-list li:hover {
+.nav-links li:hover {
     animation: blackToWhiteNavBackground 1s forwards;
 }
 
-.nav-list li:last-child {
-    padding-right: 8px;
-}
-
-.nav-list a {
+.nav-links a {
     color: rgb(80, 193, 154);
-    font-size: 1.5em;
-    text-decoration: none;
+    text-decoration: none;                      /* removes any link style, like the underline */
     letter-spacing: 3px;
+    font-size: 1.5em;
 }
 
 @keyframes blackToWhiteNavBackground {
@@ -66,3 +62,82 @@
     95%    {background-color: rgb(255, 255, 255);}
     100%    {background-color: rgb(255, 255, 255);}
 }
+/******************** Nav Bar End ********************/
+
+
+/******************** Burger Menu ********************/
+.burger {
+    display: none;                              /* starts invisible, because it only works on certain screens */
+}
+
+.burger div {                                   /* defines the 3 lines of the burger menu "icon" */
+    width: 25px;                                /* width of each stripe */
+    height: 3px;                                /* height of each stripe */
+    background-color: rgb(80, 193, 154);      /* defines the color of the burger menu "icon" */
+    margin: 5px;                                /* margin between the stripes */
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;                     /* unables the browser to scroll horizontally (to the hidden burger menu). NOTE: when viewport is present on the HTML, overflow is ignored. */
+    }
+
+    .nav-links {
+        position: fixed;                        /* fixes the position of the burger menu so that in mobile devices scrolling sideways doesn't show the white bar (fixes the problem described on line's 15 NOTE) */
+        right: 0px;
+        height: 92vh;
+        top: 10.50vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);            /* moves the entire burger menu off the screen, to stay hidden */
+        transition: transform 0.7s ease-in-out; /* transition of the burger menu. takes 0.7s and makes it smoother on the beginning and the end */
+    }
+
+    .nav-links li {
+        opacity: 0;                             /* hides the burger menu elements */
+    }
+
+    .burger {
+        display: block;                         /* displays the items on top of each other */
+        cursor: pointer;                        /* adds a pointer to the burger menu "icon", which makes it clickable */
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);                  /* Unhides the burger menu */
+}
+
+@keyframes navLinkFade {                        /* animation responsible for the fade in of the burger menu elements */
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {                    
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/****************** Burger Menu End ******************/
