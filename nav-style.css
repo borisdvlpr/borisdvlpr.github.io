@@ -6,7 +6,7 @@
     display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
     justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
-    min-height: 10.5vh;                         /* minimum height of the nav-bar */
+    min-height: 10.4%;                          /* minimum height of the nav-bar */     /* other values: 10.5vh */
     background-color: rgb(31, 40, 51);
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
