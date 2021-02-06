@@ -9,15 +9,16 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
 
         //Animate Links
+        /*
         navLinks.forEach((link, index) => {
             if(link.style.animation) {
                 link.style.animation = ' ';
 
             } else {
                 link.style.animation = `navLinkFade 0.5s ease fowards ${index / 7 + 1.2}s`;
-                console.log(index / 7);
             }
         });
+        */
     }); 
 }
 

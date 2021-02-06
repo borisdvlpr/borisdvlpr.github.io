@@ -1,8 +1,15 @@
 .nav-bar {
+    background-color: rgb(31, 40, 51);
+    margin: 0px;
+    padding: 0px;
     display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
     justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
-    min-height: 9vh;                            /* minimum height of the nav-bar */
+    min-height: 10.5vh;                         /* minimum height of the nav-bar */
+}
+
+.main-logo {
+    margin-top: 3.5px;
 }
 
 .nav-list {
@@ -22,7 +29,7 @@
 }
 
 .nav-list li:hover {
-    background-color: white;
+    animation: blackToWhiteNavBackground 1s forwards;
 }
 
 .nav-list li:last-child {
@@ -34,4 +41,28 @@
     font-size: 1.5em;
     text-decoration: none;
     letter-spacing: 3px;
+}
+
+@keyframes blackToWhiteNavBackground {
+    0%    {background-color: rgb(31, 40, 51);}
+    5%    {background-color: rgb(43, 43, 43);}
+    10%    {background-color: rgb(55, 55, 55);}
+    15%    {background-color: rgb(67, 67, 67);}
+    20%    {background-color: rgb(79, 79, 79);}
+    25%    {background-color: rgb(91, 91, 91);}
+    30%    {background-color: rgb(103, 103, 103);}
+    35%    {background-color: rgb(115, 115, 115);}
+    40%    {background-color: rgb(127, 127, 127);}
+    45%    {background-color: rgb(139, 139, 139);}
+    50%    {background-color: rgb(151, 151, 151);}
+    55%    {background-color: rgb(163, 163, 163);}
+    60%    {background-color: rgb(175, 175, 175);}
+    65%    {background-color: rgb(187, 187, 187);}
+    70%    {background-color: rgb(199, 199, 199);}
+    75%    {background-color: rgb(211, 211, 211);}
+    80%    {background-color: rgb(223, 223, 223);}
+    85%    {background-color: rgb(235, 235, 235);}
+    90%    {background-color: rgb(249, 249, 249);}
+    95%    {background-color: rgb(255, 255, 255);}
+    100%    {background-color: rgb(255, 255, 255);}
 }
