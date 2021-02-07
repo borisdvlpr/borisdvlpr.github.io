@@ -10,7 +10,6 @@
     align-items: center;                        /* aligns items at the center of the container */
     min-height: 10.5vh;                         /* minimum height of the nav-bar */
     background-color: black;                  /* Alt colors: rgb(31, 40, 51); */
-    opacity: 0.88;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: 500;                           /* Montserrat font only goes to weight: 500 before getting bold*/
