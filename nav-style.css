@@ -6,8 +6,8 @@
     display: flex;                              /* a flex container expands items to fill available free space or shrinks them to prevent overflow. */
     justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
-    min-height: 10.4%;                          /* minimum height of the nav-bar */     /* other values: 10.5vh */
-    background-color: rgb(31, 40, 51);
+    min-height: 10.5vh;                         /* minimum height of the nav-bar */
+    background-color: black;/*rgb(31, 40, 51); */
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
@@ -24,8 +24,8 @@
 
 .nav-links li {
     list-style: none;                           /* removes any list style, like the dots */
-    padding: 9px 9px 9px 9px;
-    border-radius: 13px;
+    padding: 9px 9px 9px 12px;
+    border-radius: 5px;
 }
 
 .nav-links li:hover {
@@ -36,7 +36,7 @@
     color: rgb(80, 193, 154);
     text-decoration: none;                      /* removes any link style, like the underline */
     letter-spacing: 3px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 @keyframes blackToWhiteNavBackground {
