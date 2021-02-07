@@ -15,8 +15,6 @@ body {
 .whole-body {
     margin-top: 70px;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;                           /* Montserrat font only goes to weight: 500 before getting bold*/
 }
 
 .initial-body {
@@ -34,6 +32,7 @@ body {
 }
 
 .par-1, .par-2 {
+    text-transform: uppercase;
     color: white;
 }
 
