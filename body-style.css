@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/******************** General Page *******************/
 * {
     margin: 0;                                  /* by removing all margin and padding, it's easier to give margins and paddings individually. */
     padding: 0;
@@ -6,4 +9,41 @@
 
 body {
     background-color: black;
+}
+
+/********************* Main Body *********************/
+.whole-body {
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;                           /* Montserrat font only goes to weight: 500 before getting bold*/
+}
+
+.initial-body {
+    min-height: 83.4vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.par-1, .par-2 {
+    color: white;
+}
+
+@media screen and (max-width: 878px) {
+    .main-text {
+        margin-top: 75px;
+    }
+}
+
+/*********************** Footer **********************/
+.footer {
+
 }
