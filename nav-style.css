@@ -7,7 +7,7 @@
     justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
     min-height: 10.5vh;                         /* minimum height of the nav-bar */
-    background-color: black;/*rgb(31, 40, 51); */
+    background-color: black;                  /* Alt colors: rgb(31, 40, 51); */
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
