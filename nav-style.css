@@ -78,6 +78,7 @@
     height: 3px;                                /* height of each stripe */
     background-color: rgb(80, 193, 154);      /* defines the color of the burger menu "icon" */
     margin: 5px;                                /* margin between the stripes */
+    border-radius: 50px;
     transition: all 0.3s ease;
 }
 
