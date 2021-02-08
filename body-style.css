@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
-/******************** General Page *******************/
+/******************* General Pages *******************/
 * {
     margin: 0;                                  /* by removing all margin and padding, it's easier to give margins and paddings individually. */
     padding: 0;
@@ -9,74 +9,160 @@
 
 body {
     background-color: black;
-}
-
-/********************* Main Body *********************/
-.whole-body {
-    margin-top: 70px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.initial-body {
-    min-height: 83.4vh;
+.page-body {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page-content {
+    min-height: 85.6vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
+/***************** End General Pages *****************/
 
-.main-text {
-    animation: initialTextFade 4s 1 ease-in-out;
+
+/******************* Landing Page ********************/
+.landing-text {
     display: flex;
     flex-direction: column;
+    animation: rightToLeftFade 3s 1 ease-in-out;
 }
 
-.par-1, .par-2 {
+.main-par-1, .main-par-2 {
     text-transform: uppercase;
     color: white;
 }
 
-.main-body-image {
-    animation: initialImageFade 4s 1 ease-in-out;
+.main-par-1 {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.main-par-2 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.landing-image {
+    animation: leftToRightFade 3s 1 ease-in-out;
+}
+
+.landing-arrow {
+    margin-top: -35px;
+    align-self: center;
+    animation: arrowMov 1s infinite ease-in-out backwards;
 }
 
 @media screen and (max-width: 820px) {
-    .initial-body {
+    .main-landing {
         flex-direction: column;
     }
 
-    .main-text {
-        margin-top: 55px;
+    .landing-text {
+        margin-top: 50px;
     }
 
-    .main-body-image {
-        margin-top: 60px;
+    .landing-image {
+        margin-top: 35px;
     }
+
+    .landing-arrow {
+        margin-top: 25px;
+    }
+    
 }
+/***************** End Landing Page ******************/
 
-@keyframes initialTextFade {
-    from {
-        opacity: 0;
-        transform: translateX(2%);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+/********************* About Page ********************/
+.about-image {
+    animation: topToBottomFade 1s 1 ease-in-out;
 }
+/******************* End About Page ******************/
 
-@keyframes initialImageFade {
-    from {
-        opacity: 0;
-        transform: translateX(-2%);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
+/********************* Skills Page *******************/
+
+/******************* End Skills Page *****************/
+
+
+/******************** Contact Page *******************/
+
+/****************** End Contact Page *****************/
+
 
 /*********************** Footer **********************/
+.footer {
+    background-color: black;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.footer-text {
+    text-transform: uppercase;
+    color: white;
+}
+
+.linkedin-logo, .instagram-logo, .twitter-logo, .github-logo {
+    filter: invert(100%);                       /* Inverts the colors of all footer logos. */
+}
+/********************* End Footer ********************/
+
+
+/********************* Animations ********************/
+@keyframes rightToLeftFade {
+    from {
+        opacity: 0;
+        transform: translateX(3%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes leftToRightFade {
+    from {
+        opacity: 0;
+        transform: translateX(-3%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes topToBottomFade {
+    from {
+        opacity: 0;
+        transform: translateY(-5%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes arrowMov {
+    from { transform: translateY(0%); }
+
+    50% { transform: translateY(-20%); }
+
+    to { transform: translateY(0%); }  
+}
+/******************* End Animations ******************/

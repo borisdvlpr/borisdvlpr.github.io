@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
-
 /********************** Nav Bar **********************/
 .nav-bar {
     position: fixed;
@@ -9,8 +7,7 @@
     justify-content: space-around;              /* attribute used to position the elements. every item will have space before, between and after them. */
     align-items: center;                        /* aligns items at the center of the container */
     min-height: 10.5vh;                         /* minimum height of the nav-bar */
-    background-color: black;                  /* Alt colors: rgb(31, 40, 51); */
-    font-family: 'Montserrat', sans-serif;
+    background-color:  black;                 /* Alt colors: rgb(31, 40, 51); */
     text-transform: uppercase;
     font-weight: 500;                           /* Montserrat font only goes to weight: 500 before getting bold*/
 }
@@ -33,6 +30,10 @@
 
 .nav-links li:hover {
     animation: blackToWhiteNavBackground 1s forwards;
+}
+
+.burger-menu-adjustment {
+    opacity: 0;
 }
 
 .nav-links a {
@@ -65,7 +66,7 @@
     95%    {background-color: rgb(255, 255, 255);}
     100%    {background-color: rgb(255, 255, 255);}
 }
-/******************** Nav Bar End ********************/
+/******************** End Nav Bar ********************/
 
 
 /******************** Burger Menu ********************/
