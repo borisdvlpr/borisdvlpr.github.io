@@ -43,7 +43,7 @@ body {
 }
 
 .main-par-1 {
-    animation: fillLetters 0.5s ease-in-out forwards 5s;
+    animation: fillLetters 0.5s ease-in-out forwards 4s;
 }
 
 .main-par-1 path:nth-child(1) {
@@ -55,79 +55,79 @@ body {
 .main-par-1 path:nth-child(2) {
     stroke-dasharray: 417.6553955078125px;                     
     stroke-dashoffset: 417.6553955078125px;
-    animation: lineAnimation 2s ease forwards 0.3s;
+    animation: lineAnimation 2s ease forwards 0.2s;
 }
 
 .main-par-1 path:nth-child(3) {
     stroke-dasharray: 330.16705322265625px;                     
     stroke-dashoffset: 330.16705322265625px;
-    animation: lineAnimation 2s ease forwards 0.6s;
+    animation: lineAnimation 2s ease forwards 0.4s;
 }
 
 .main-par-1 path:nth-child(4) {
     stroke-dasharray: 357.7920837402344;                     
     stroke-dashoffset: 357.7920837402344px;
-    animation: lineAnimation 2s ease forwards 0.9s;
+    animation: lineAnimation 2s ease forwards 0.6s;
 }
 
 .main-par-1 path:nth-child(5) {
     stroke-dasharray: 405.3021545410156px;                     
     stroke-dashoffset: 405.3021545410156px;
-    animation: lineAnimation 2s ease forwards 1.2s;
+    animation: lineAnimation 2s ease forwards 0.8s;
 }
 
 .main-par-1 path:nth-child(6) {
     stroke-dasharray: 417.6546630859375px;                     
     stroke-dashoffset: 417.6546630859375px;
-    animation: lineAnimation 2s ease forwards 1.5s;
+    animation: lineAnimation 2s ease forwards 1.0s;
 }
 
 .main-par-1 path:nth-child(7) {
     stroke-dasharray: 397.04876708984375;                     
     stroke-dashoffset: 397.04876708984375px;
-    animation: lineAnimation 2s ease forwards 1.8s;
+    animation: lineAnimation 2s ease forwards 1.2s;
 }
 
 .main-par-1 path:nth-child(8) {
     stroke-dasharray: 490.1424865722656px;                     
     stroke-dashoffset: 490.1424865722656px;
-    animation: lineAnimation 2s ease forwards 2.1s;
+    animation: lineAnimation 2s ease forwards 1.4s;
 }
 
 .main-par-1 path:nth-child(9) {
     stroke-dasharray: 148.60800170898438px;                     
     stroke-dashoffset: 148.60800170898438px;
-    animation: lineAnimation 2s ease forwards 2.4s;
+    animation: lineAnimation 2s ease forwards 1.6s;
 }
 
 .main-par-1 path:nth-child(10) {
     stroke-dasharray: 405.302001953125px;                     
     stroke-dashoffset: 405.302001953125px;
-    animation: lineAnimation 2s ease forwards 2.7s;
+    animation: lineAnimation 2s ease forwards 1.8s;
 }
 
 .main-par-1 path:nth-child(11) {
     stroke-dasharray: 357.7921447753906px;                     
     stroke-dashoffset: 357.7921447753906px;
-    animation: lineAnimation 2s ease forwards 3.0s;
+    animation: lineAnimation 2s ease forwards 2.0s;
 }
 
 .main-par-1 path:nth-child(12) {
     stroke-dasharray: 408.47332763671875px;                     
     stroke-dashoffset: 408.47332763671875px;
-    animation: lineAnimation 2s ease forwards 3.3s;
+    animation: lineAnimation 2s ease forwards 2.2s;
 }
 
 .main-par-1 path:nth-child(13) {
     stroke-dasharray: 417.65478515625px;                     
     stroke-dashoffset: 417.65478515625px;
-    animation: lineAnimation 2s ease forwards 3.6s;
+    animation: lineAnimation 2s ease forwards 2.4s;
 }
 
 .main-par-1 path:nth-child(14) {
     stroke-dasharray: 357.7955627441406px;                     
     stroke-dashoffset: 357.7955627441406px;
-    animation: lineAnimation 2s ease forwards 3.9s;
+    animation: lineAnimation 2s ease forwards 2.6s;
 }
 
 .main-par-2 {
@@ -140,12 +140,6 @@ body {
 
 .landing-image {
     animation: leftToRightFade 3s 1 ease-in-out;
-}
-
-.landing-arrow {
-    margin-top: -35px;
-    align-self: center;
-    animation: arrowMov 1s infinite ease-in-out backwards;
 }
 
 @media screen and (max-width: 820px) {
@@ -214,9 +208,7 @@ body {
 }
 
 @keyframes lineAnimation {
-    to {
-        stroke-dashoffset: 0px;
-    }
+    to { stroke-dashoffset: 0px; }
 }
 
 @keyframes fillLetters {
