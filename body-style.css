@@ -11,7 +11,7 @@ body {
     width: 100%;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    animation: pageFade 1s 1 ease-in-out;
+    animation: pageFade 1.5s 1 ease-in-out;
 }
 
 .page-body {
@@ -43,7 +43,7 @@ body {
 }
 
 .main-par-1 {
-    animation: fillLetters 0.5s ease-in-out forwards 4s;
+    animation: fillLetters 0.5s ease-in-out forwards 3.85s;
 }
 
 .main-par-1 path:nth-child(1) {
