@@ -130,12 +130,20 @@ body {
     animation: lineAnimation 2s ease forwards 2.6s;
 }
 
-.main-par-2 {
+.smaller-text {
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
     font-style: italic;
+}
+
+#st1 {
+    margin-bottom: 3px;
+}
+
+#st2 {
+    margin-top: 3px;
 }
 
 .landing-image {
@@ -164,9 +172,7 @@ body {
 
 
 /********************* About Page ********************/
-.about-image {
-    animation: topToBottomFade 1s 1 ease-in-out;
-}
+
 /******************* End About Page ******************/
 
 
