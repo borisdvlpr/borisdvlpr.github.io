@@ -30,7 +30,18 @@ body {
 }
 
 .error-class {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     color: white;
+}
+
+.loading-image {
+    margin-bottom: 25px;
+    animation-name: loadingImage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 /***************** End General Pages *****************/
 
@@ -211,6 +222,11 @@ body {
 @keyframes pageFade {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes loadingImage {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 @keyframes lineAnimation {
