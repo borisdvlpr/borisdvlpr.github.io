@@ -11,7 +11,7 @@ body {
     width: 100%;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    /* animation: fade 1.5s 1 ease-in-out; */
+    animation: fade 1.2s 1 ease-in-out;
 }
 
 .page-body {                                    /* Classed used for defining the main container of every page, with a margin of 45px for the nav bar */ 
@@ -52,6 +52,19 @@ body {
     display: flex;
     flex-direction: column;
     /* animation: rightToLeftFade 3s 1 ease-in-out; */
+}
+
+.smaller-text {
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#st1 {
+    margin-bottom: 7px;
+    animation: topToBottomFade 2.3s 1 ease-in-out;
 }
 
 .main-par-1 {
@@ -142,77 +155,38 @@ body {
     animation: lineAnimation 2s ease forwards 2.6s;
 }
 
-.smaller-text {
-    color: white;
-    font-size: 17px;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-style: italic;
-}
-
-.text-revealer {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.text-revealer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    z-index: 1;
-    background-color: white;
-}
-
-#revealer1::before {
-    animation: showST1 .8s ease;
-}
-
-#revealer2::before {
-    animation: showST2 .8s ease;
-}
-
-#st1 {
-    margin-bottom: 7px;
-    opacity: 0;
-    animation: fade 2.2s forwards;
-}
-
 #st2 {
-    margin-top: 7px;
-    opacity: 0;
-    animation: fade 2.2s forwards;
+    margin-top: 4px;
+    animation: bottomToTopFade 2.3s 1 ease-in-out;
 }
 
 .landing-image {
     fill-opacity: 0;
-    animation: fillImage 3s 1 ease-in-out forwards 1.9s;
+    animation: fillImage 3s 1 ease-in-out forwards 2.4s;
 }
 
 .landing-image path:nth-child(1) {
     stroke-dasharray: 3360px;
     stroke-dashoffset: 3360px;
-    animation: lineAnimation 2s ease forwards
+    animation: lineAnimation 2.6s ease forwards;
 }
 
 .landing-image path:nth-child(2) {
     stroke-dasharray: 2103.230224609375px;
     stroke-dashoffset: 2103.230224609375px;
-    animation: lineAnimation 2s ease forwards
+    animation: lineAnimation 2.6s ease forwards;
 }
 
 .landing-image path:nth-child(3) {
     stroke-dasharray: 2800px;
     stroke-dashoffset: 2800px;
-    animation: lineAnimation 2s ease forwards
+    animation: lineAnimation 2.6s ease forwards;
 }
 
 .landing-image path:nth-child(4) {
     stroke-dasharray: 1862px;
     stroke-dashoffset: 1862px;
-    animation: lineAnimation 2s ease forwards
+    animation: lineAnimation 2.6s ease forwards;
 }
 
 @media screen and (max-width: 820px) {
@@ -287,40 +261,6 @@ body {
     to { fill: white; }
 }
 
-@keyframes showST1 {
-    0% {
-        width: 0;
-        left: 0;
-    }
-
-    50% {
-        width: 100px;
-        left: 0;
-    }
-
-    100% {
-        width: 0;
-        left: 100px;
-    }
-}
-
-@keyframes showST2 {
-    0% {
-        width: 0;
-        left: 0;
-    }
-
-    50% {
-        width: 280px;
-        left: 0;
-    }
-
-    100% {
-        width: 0;
-        left: 280px;
-    }
-}
-
 @keyframes fillImage {
     form { fill-opacity: 0; }
     /*
@@ -344,22 +284,22 @@ body {
     }
 }
 
-@keyframes leftToRightFade {
+@keyframes topToBottomFade {
     from {
         opacity: 0;
-        transform: translateX(-3%);
+        transform: translateY(-8%);
     }
 
     to {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
 }
 
-@keyframes topToBottomFade {
+@keyframes bottomToTopFade {
     from {
         opacity: 0;
-        transform: translateY(-5%);
+        transform: translateY(8%);
     }
 
     to {
