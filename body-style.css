@@ -159,7 +159,32 @@ body {
 }
 
 .landing-image {
-    animation: leftToRightFade 3s 1 ease-in-out;
+    fill-opacity: 0;
+    animation: fillImage 3s 1 ease-in-out forwards 1.9s;
+}
+
+.landing-image path:nth-child(1) {
+    stroke-dasharray: 3360px;
+    stroke-dashoffset: 3360px;
+    animation: lineAnimation 2s ease forwards
+}
+
+.landing-image path:nth-child(2) {
+    stroke-dasharray: 2103.230224609375px;
+    stroke-dashoffset: 2103.230224609375px;
+    animation: lineAnimation 2s ease forwards
+}
+
+.landing-image path:nth-child(3) {
+    stroke-dasharray: 2800px;
+    stroke-dashoffset: 2800px;
+    animation: lineAnimation 2s ease forwards
+}
+
+.landing-image path:nth-child(4) {
+    stroke-dasharray: 1862px;
+    stroke-dashoffset: 1862px;
+    animation: lineAnimation 2s ease forwards
 }
 
 @media screen and (max-width: 820px) {
@@ -173,12 +198,7 @@ body {
 
     .landing-image {
         margin-top: 35px;
-    }
-
-    .landing-arrow {
-        margin-top: 25px;
-    }
-    
+    }    
 }
 /***************** End Landing Page ******************/
 
@@ -235,13 +255,13 @@ body {
 }
 
 @keyframes fillLetters {
-    from {
-        fill: transparent;
-    }
+    from { fill: transparent }
+    to { fill: white; }
+}
 
-    to {
-        fill: white;
-    }
+@keyframes fillImage {
+    form { fill-opacity: 0; }
+    to { fill-opacity: 1; }
 }
 
 @keyframes rightToLeftFade {
