@@ -48,7 +48,7 @@ body {
 
 
 /******************* Landing Page ********************/
-.landing-text {
+.landing-content {
     display: flex;
     flex-direction: column;
     /* animation: rightToLeftFade 3s 1 ease-in-out; */
@@ -160,6 +160,27 @@ body {
     animation: bottomToTopFade 2.3s 1 ease-in-out;
 }
 
+.about-me-area {
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: rgb(80, 193, 154);
+}
+
+.about-me-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 .landing-image {
     fill-opacity: 0;
     animation: fillImage 3s 1 ease-in-out forwards 2.4s;
@@ -194,12 +215,12 @@ body {
         flex-direction: column;
     }
 
-    .landing-text {
-        margin-top: 50px;
+    .page-body {
+        margin-top: 105px;
     }
 
     .landing-image {
-        margin-top: 35px;
+        margin-top: 75px;
     }    
 }
 /***************** End Landing Page ******************/
@@ -287,7 +308,7 @@ body {
 @keyframes topToBottomFade {
     from {
         opacity: 0;
-        transform: translateY(-8%);
+        transform: translateY(-10%);
     }
 
     to {
@@ -299,7 +320,7 @@ body {
 @keyframes bottomToTopFade {
     from {
         opacity: 0;
-        transform: translateY(8%);
+        transform: translateY(10%);
     }
 
     to {
