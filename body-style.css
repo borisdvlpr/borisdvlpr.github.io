@@ -11,10 +11,10 @@ body {
     width: 100%;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
-    animation: pageFade 1.5s 1 ease-in-out;
+    /* animation: fade 1.5s 1 ease-in-out; */
 }
 
-.page-body {
+.page-body {                                    /* Classed used for defining the main container of every page, with a margin of 45px for the nav bar */ 
     margin-top: 45px;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ body {
 .landing-text {
     display: flex;
     flex-direction: column;
-    animation: rightToLeftFade 3s 1 ease-in-out;
+    /* animation: rightToLeftFade 3s 1 ease-in-out; */
 }
 
 .main-par-1 {
@@ -150,12 +150,40 @@ body {
     font-style: italic;
 }
 
+.text-revealer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.text-revealer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+#revealer1::before {
+    animation: showST1 .8s ease;
+}
+
+#revealer2::before {
+    animation: showST2 .8s ease;
+}
+
 #st1 {
-    margin-bottom: 3px;
+    margin-bottom: 7px;
+    opacity: 0;
+    animation: fade 2.2s forwards;
 }
 
 #st2 {
-    margin-top: 3px;
+    margin-top: 7px;
+    opacity: 0;
+    animation: fade 2.2s forwards;
 }
 
 .landing-image {
@@ -240,12 +268,12 @@ body {
 
 
 /********************* Animations ********************/
-@keyframes pageFade {
+@keyframes fade {                               /* Animation used for general fade */
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-@keyframes loadingImage {
+@keyframes loadingImage {                       /* Animation used for the "loading" image on the unfinished pages */
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
@@ -259,8 +287,48 @@ body {
     to { fill: white; }
 }
 
+@keyframes showST1 {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100px;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100px;
+    }
+}
+
+@keyframes showST2 {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 280px;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 280px;
+    }
+}
+
 @keyframes fillImage {
     form { fill-opacity: 0; }
+    /*
+    6% { fill-opacity: 1; }
+    11% { fill-opacity: 0; }
+    15% { fill-opacity: 1; }
+    19% { fill-opacity: 0; }
+    */
     to { fill-opacity: 1; }
 }
 
