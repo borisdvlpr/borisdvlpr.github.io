@@ -174,11 +174,16 @@ body {
     border-color: rgb(80, 193, 154);
 }
 
+.about-me-area:hover {
+    animation: fillButton 1s ease forwards;
+}
+
 .about-me-link {
     text-decoration: none;
     color: white;
     font-size: 14px;
     text-transform: uppercase;
+    padding: 14px 10px 14px 10px;
 }
 
 .landing-image {
@@ -280,6 +285,16 @@ body {
 @keyframes fillLetters {
     from { fill: transparent }
     to { fill: white; }
+}
+
+@keyframes fillButton {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: rgb(80, 193, 154);
+    }
 }
 
 @keyframes fillImage {
