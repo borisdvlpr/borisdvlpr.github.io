@@ -21,12 +21,17 @@ body {
 }
 
 .main-page-content {
-    min-height: 85.6vh;
+    min-height: 85.9vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .error-class {
@@ -48,12 +53,6 @@ body {
 
 
 /******************* Landing Page ********************/
-.landing-content {
-    display: flex;
-    flex-direction: column;
-    /* animation: rightToLeftFade 3s 1 ease-in-out; */
-}
-
 .smaller-text {
     color: white;
     font-size: 17px;
@@ -160,7 +159,7 @@ body {
     animation: bottomToTopFade 2.3s 1 ease-in-out;
 }
 
-.about-me-area {
+.about-me-button {
     width: 150px;
     height: 50px;
     margin-top: 25px;
@@ -174,7 +173,7 @@ body {
     border-color: rgb(80, 193, 154);
 }
 
-.about-me-area:hover {
+.about-me-button:hover {
     animation: fillButton 1s ease forwards;
 }
 
@@ -233,7 +232,230 @@ body {
 
 
 /********************* About Page ********************/
+.about-image {
+    margin-top: 25px;
+}
 
+.about-image path:nth-child(1) {
+    stroke-dasharray: 178.193603515625px;
+    stroke-dashoffset: 178.193603515625px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(2) {
+    stroke-dasharray: 231.61740112304688px;
+    stroke-dashoffset: 231.61740112304688px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(3) {
+    stroke-dasharray: 232.92282104492188px;
+    stroke-dashoffset: 232.92282104492188px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(4) {
+    stroke-dasharray: 1930.7584228515625px;
+    stroke-dashoffset: 1930.7584228515625px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(5) {
+    stroke-dasharray: 41.35530471801758px;
+    stroke-dashoffset: 41.35530471801758px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(6) {
+    stroke-dasharray: 5135.8154296875px;
+    stroke-dashoffset: 5135.8154296875px;
+    animation: lineAnimation 8s ease-out forwards 1s;
+}
+
+.about-image path:nth-child(7) {
+    stroke-dasharray: 117.1259994506836px;
+    stroke-dashoffset: 117.1259994506836px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(8) {
+    stroke-dasharray: 990.65576171875px;
+    stroke-dashoffset: 990.65576171875px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(9) {
+    stroke-dasharray: 59.12592697143555px;
+    stroke-dashoffset: 59.12592697143555px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(10) {
+    stroke-dasharray: 195.79405212402344px;
+    stroke-dashoffset: 195.79405212402344px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(11) {
+    stroke-dasharray: 15.298019409179688px;
+    stroke-dashoffset: 15.298019409179688px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(12) {
+    stroke-dasharray: 57.092735290527344px;
+    stroke-dashoffset: 57.092735290527344px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(13) {
+    stroke-dasharray: 146.21896362304688px;
+    stroke-dashoffset: 146.21896362304688px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(14) {
+    stroke-dasharray: 36.491966247558594px;
+    stroke-dashoffset: 36.491966247558594px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(15) {
+    stroke-dasharray: 26.203290939331055px;
+    stroke-dashoffset: 26.203290939331055px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(16) {
+    stroke-dasharray: 35.56035614013672px;
+    stroke-dashoffset: 35.56035614013672px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(17) {
+    stroke-dasharray: 79.74201965332031px;
+    stroke-dashoffset: 79.74201965332031px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(18) {
+    stroke-dasharray: 33.49245071411133px;
+    stroke-dashoffset: 33.49245071411133px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(19) {
+    stroke-dasharray: 99.38265228271484px;
+    stroke-dashoffset: 99.38265228271484px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(20) {
+    stroke-dasharray: 41.82054901123047px;
+    stroke-dashoffset: 41.82054901123047px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(21) {
+    stroke-dasharray: 13.527078628540039px;
+    stroke-dashoffset: 13.527078628540039px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(22) {
+    stroke-dasharray: 98.37309265136719px;
+    stroke-dashoffset: 98.37309265136719px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(23) {
+    stroke-dasharray: 15.919197082519531px;
+    stroke-dashoffset: 15.919197082519531px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(24) {
+    stroke-dasharray: 242.05819702148438px;
+    stroke-dashoffset: 242.05819702148438px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-image path:nth-child(25) {
+    stroke-dasharray: 53.62704849243164px;
+    stroke-dashoffset: 53.62704849243164px;
+    animation: lineAnimation 2.6s ease forwards 0.5s;
+}
+
+.about-header {
+    opacity: 0;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-style: italic;
+    animation: fade 3s ease-out .9s forwards; 
+}
+
+.text-revealer {
+    margin-bottom: 35px;
+    align-self: flex-start;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.text-revealer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+#revealer1::before {
+    animation: showText 1s ease .8s;
+}
+
+.about-par {
+    color: white;
+    max-width: 550px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+    align-self: stretch;
+}
+
+@media screen and (max-width: 1100px) {
+    .main-page-content {
+        flex-direction: column;
+    }
+
+    .page-body {
+        margin-top: 105px;
+    }
+    .text-revealer {
+        align-self: center;
+        margin-top: 30px;
+    }
+    
+    .about-par {
+        max-width: 850px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .about-par {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .about-par {
+        max-width: 420px;
+    }
+}
 /******************* End About Page ******************/
 
 
@@ -279,26 +501,21 @@ body {
     to { transform: rotate(360deg); }
 }
 
-@keyframes lineAnimation {
+@keyframes lineAnimation {                      /* Animation used to fill the lines in all stroke animations */
     to { stroke-dashoffset: 0px; }
 }
 
-@keyframes fillLetters {
+@keyframes fillLetters {                        /* Animation used to fill the letters of the main paragraph on the landing page */
     from { fill: transparent }
     to { fill: white; }
 }
 
-@keyframes fillButton {
-    from {
-        background-color: transparent;
-    }
-
-    to {
-        background-color: rgb(80, 193, 154);
-    }
+@keyframes fillButton {                         /* Animation used to fill the "MORE ABOUT ME" button on the landing page */
+    from { background-color: transparent; }
+    to { background-color: rgb(80, 193, 154); }
 }
 
-@keyframes fillImage {
+@keyframes fillImage {                          /* Animation used to fill the image on the landing page */
     form { fill-opacity: 0; }
     /*
     6% { fill-opacity: 1; }
@@ -307,6 +524,23 @@ body {
     19% { fill-opacity: 0; }
     */
     to { fill-opacity: 1; }
+}
+
+@keyframes showText {                           /* Animation used to "swipe" the div of the About Me page header */ 
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 210px;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 210px;
+    }
 }
 
 @keyframes rightToLeftFade {
