@@ -388,10 +388,7 @@ body {
 
 .about-header {
     opacity: 0;
-    color: white;
     font-size: 36px;
-    text-transform: uppercase;
-    font-style: italic;
     animation: fade 3s ease-out .9s forwards; 
 }
 
