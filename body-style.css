@@ -432,7 +432,7 @@ body {
     }
 
     .page-body {
-        margin-top: 105px;
+        margin-top: 95px;
     }
     .text-revealer {
         align-self: center;
@@ -448,6 +448,11 @@ body {
 @media screen and (max-width: 920px) {
     .about-par {
         max-width: 550px;
+    }
+
+    .about-image {
+        max-width: 353px;
+        max-height: 469px;
     }
 }
 
