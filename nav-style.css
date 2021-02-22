@@ -37,13 +37,14 @@
 }
 
 .nav-links a {
-    color: rgb(80, 193, 154);
+    color: white;                             /* rgb(80, 193, 154); */
     text-decoration: none;                      /* removes any link style, like the underline */
     letter-spacing: 3px;
     font-size: 1.3em;
 }
 
 @keyframes blackToWhiteNavBackground {
+    /*
     0%    {background-color: rgb(31, 40, 51);}
     5%    {background-color: rgb(43, 43, 43);}
     10%    {background-color: rgb(55, 55, 55);}
@@ -65,6 +66,15 @@
     90%    {background-color: rgb(249, 249, 249);}
     95%    {background-color: rgb(255, 255, 255);}
     100%    {background-color: rgb(255, 255, 255);}
+    */
+
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: rgb(80, 193, 154);
+    }
 }
 /******************** End Nav Bar ********************/
 
