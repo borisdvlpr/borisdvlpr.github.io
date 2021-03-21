@@ -1,0 +1,114 @@
+@import url("general-body-style.css");
+
+/******************** Contact Page *******************/
+#contact-page-content {
+    margin-top: 43px;
+    min-height: 80vh;
+}
+
+.contact-box {
+    width: 400px;
+    background-color: #000000;
+    display: flex;
+}
+
+.contact-header {
+    opacity: 0;
+    font-size: 36px;
+    animation: fade 3s ease-out .9s forwards; 
+}
+
+.text-revealer {
+    z-index: -1;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.text-revealer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+#revealer3::before {
+    animation: showText 1s ease .8s;
+}
+
+form {
+    margin-bottom: 35px;
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(80, 193, 154);
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.btn {
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: rgb(80, 193, 154);
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.location-map {
+    z-index: -1;
+    border-radius: 20px;
+    filter: grayscale(100%) invert(100%) contrast(100%);
+}
+
+@media screen and (max-width: 1080px) {
+    .page-body {
+        margin-top: 135px;
+    }
+
+    #contact-page-content {
+        margin-top: -20px;
+    }
+
+    .contact-box {
+        margin-bottom: 20px;
+    }
+
+    .location-map {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .location-map {
+        width: 430px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .location-map {
+        width: 330px;
+        height: 330px;
+    }
+}
+/****************** End Contact Page *****************/

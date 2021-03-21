@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/******************* General Pages *******************/
+* {
+    margin: 0;                                  /* by removing all margin and padding, it's easier to give margins and paddings individually. */
+    padding: 0;
+    box-sizing: border-box;                     /* */
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    animation: fade 1.2s 1 ease-in-out;
+}
+
+.page-body {                                    /* Classed used for defining the main container of every page, with a margin of 45px for the nav bar */ 
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page-content {
+    min-height: 85.9vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.error-class {
+    text-transform: uppercase;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.loading-image {
+    z-index: -1;
+    margin-bottom: 25px;
+    animation-name: loadingImage;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+/***************** End General Pages *****************/
+
+
+/********************* Dark Mode *********************/
+.dark-mode {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.dark-mode-button {
+    font-family: 'Montserrat', sans-serif;
+    width: 123px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 7px;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    */
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: rgb(80, 193, 154);
+    background-color: transparent;
+
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 14px 10px 14px 10px;
+}
+
+.dark-mode-button:hover {
+    animation: fillButton 1s ease forwards;
+}
+/******************* Dark Mode End *******************/
+
+
+/*********************** Footer **********************/
+.footer {
+    z-index: -1;
+    background-color: #000000;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.footer-text {
+    text-transform: uppercase;
+    color: white;
+}
+
+.linkedin-logo, .instagram-logo, .twitter-logo, .github-logo {
+    filter: invert(100%);                       /* Inverts the colors of all footer logos. */
+}
+/********************* End Footer ********************/
+
+
+/********************* Animations ********************/
+@keyframes fade {                               /* Animation used for general fade */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes loadingImage {                       /* Animation used for the "loading" image on the unfinished pages */
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes lineAnimation {                      /* Animation used to fill the lines in all stroke animations */
+    to { stroke-dashoffset: 0px; }
+}
+
+@keyframes fillLetters {                        /* Animation used to fill the letters of the main paragraph on the landing page */
+    from { fill: transparent }
+    to { fill: white; }
+}
+
+@keyframes fillButton {                         /* Animation used to fill the "MORE ABOUT ME" button on the landing page */
+    from { background-color: transparent; }
+    to { background-color: rgb(80, 193, 154); }
+}
+
+@keyframes fillImage {                          /* Animation used to fill the image on the landing page */
+    form { fill-opacity: 0; }
+    /*
+    6% { fill-opacity: 1; }
+    11% { fill-opacity: 0; }
+    15% { fill-opacity: 1; }
+    19% { fill-opacity: 0; }
+    */
+    to { fill-opacity: 1; }
+}
+
+@keyframes showText {                           /* Animation used to "swipe" the div of the About Me page header */ 
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 210px;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 210px;
+    }
+}
+
+@keyframes rightToLeftFade {
+    from {
+        opacity: 0;
+        transform: translateX(3%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes topToBottomFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes bottomToTopFade {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+/******************* End Animations ******************/

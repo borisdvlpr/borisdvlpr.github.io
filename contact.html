@@ -5,21 +5,24 @@
         <meta charset = "UTF-8">
         <meta name = "description" content = "Eduardo Miranda's Personal Website">
         <meta name = "author" content = "Eduardo Miranda">
-        <!-- <meta name = "keywords" content = "HTML, Tutorial, HTML Tutorial, Web Development"> -->
+        <meta name = "keywords" content = "Website, Digital Portfolio, HTML, CSS, Eduardo, Miranda, Resume, Web Design, Web, Development,
+            Computer, Science, Javascript, Front, End">
+        <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <link rel = "icon" href = "favicon.png" type = "image/x-icon"/>
         <link rel = "shortcut icon" href = "favicon.png" type = "image/x-icon"/>
-        <link rel = "stylesheet" href = "body-style.css">
-        <link rel = "stylesheet" href = "nav-style.css">
-        <title> Eduardo Miranda | Digital Portfolio </title>
+        <link rel = "stylesheet" href = "css/general-body-style.css">
+        <link rel = "stylesheet" href = "css/nav-style.css">
+        <link rel = "stylesheet" href = "css/contact-style.css">
+        <title> Eduardo Miranda | Contact Me </title>
     </head>
 
     <body>
-        <header>
-            <!-- ************************ Nav Bar ************************* -->
+        <!-- ************************ Nav Bar ************************* -->
+        <header> 
             <nav class = "nav-bar">
                 <div class = "main-logo">
-                    <a href = "index.html"><img src = "logo_transparent_short.png" alt = "Logo" width = "50"></a>
+                    <a href = "index.html"><img src = "images/logo_transparent_short.png" alt = "Logo" width = "50"></a>
                 </div>
 
                 <ul class = "nav-links">
@@ -36,41 +39,67 @@
                     <div class = "line3"></div>
                 </div>
             </nav>
-            <!-- *********************** End Nav Bar ********************** -->
         </header>
+        <!-- *********************** End Nav Bar ********************** -->
 
         <main>
+            <!-- <div class = "page-body">
+                <div class = "main-page-content" id = "contact-page-content">
+                    <div class = "column-content">
+                        <div class = "text-revealer" id = "revealer3">
+                            <div class = "contact-header"> 
+                                <svg width = "180" height = "22" viewBox="0 0 485 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.8434 51.432C18.9474 51.432 14.7234 50.568 11.1714 48.84C7.61941 47.064 4.90741 44.616 3.03541 41.496C1.21141 38.328 0.299406 34.656 0.299406 30.48C0.299406 24.912 1.54741 19.824 4.04341 15.216C6.58741 10.608 10.1874 6.96 14.8434 4.272C19.4994 1.536 24.8754 0.167998 30.9714 0.167998C35.0034 0.167998 38.5794 0.815998 41.6994 2.112C44.8194 3.36 47.2194 5.16 48.8994 7.512L45.1554 10.824C41.9394 6.888 37.0674 4.92 30.5394 4.92C25.5954 4.92 21.2274 6.072 17.4354 8.376C13.6434 10.632 10.7154 13.68 8.65141 17.52C6.58741 21.36 5.55541 25.584 5.55541 30.192C5.55541 35.232 7.16341 39.24 10.3794 42.216C13.6434 45.192 18.2754 46.68 24.2754 46.68C30.8514 46.68 36.1794 44.688 40.2594 40.704L43.3554 44.232C41.1474 46.536 38.3394 48.312 34.9314 49.56C31.5234 50.808 27.8274 51.432 23.8434 51.432ZM74.3227 51.432C69.4267 51.432 65.2267 50.568 61.7227 48.84C58.2187 47.064 55.5547 44.616 53.7307 41.496C51.9067 38.328 50.9947 34.656 50.9947 30.48C50.9947 24.96 52.2427 19.896 54.7387 15.288C57.2347 10.632 60.7867 6.96 65.3947 4.272C70.0027 1.536 75.3307 0.167998 81.3787 0.167998C86.2747 0.167998 90.4747 1.056 93.9787 2.832C97.4827 4.56 100.147 7.008 101.971 10.176C103.843 13.296 104.779 16.944 104.779 21.12C104.779 26.64 103.507 31.728 100.963 36.384C98.4667 40.992 94.9147 44.664 90.3067 47.4C85.6987 50.088 80.3707 51.432 74.3227 51.432ZM74.8267 46.68C79.6747 46.68 83.9707 45.552 87.7147 43.296C91.4587 40.992 94.3387 37.92 96.3547 34.08C98.4187 30.192 99.4507 25.944 99.4507 21.336C99.4507 16.344 97.8427 12.36 94.6267 9.384C91.4107 6.408 86.8267 4.92 80.8747 4.92C76.0267 4.92 71.7307 6.072 67.9867 8.376C64.2427 10.632 61.3387 13.704 59.2747 17.592C57.2587 21.432 56.2507 25.632 56.2507 30.192C56.2507 35.232 57.8587 39.24 61.0747 42.216C64.2907 45.192 68.8747 46.68 74.8267 46.68ZM163.377 0.599997L153.297 51H148.977L124.857 9.24L116.505 51H111.249L121.329 0.599997H125.649L149.769 42.36L158.121 0.599997H163.377ZM188.755 5.208H170.971L171.907 0.599997H212.731L211.723 5.208H194.011L184.867 51H179.611L188.755 5.208ZM243.192 37.536H215.04L206.328 51H200.568L233.688 0.599997H238.944L251.904 51H246.576L243.192 37.536ZM242.184 33.216L235.344 6L217.776 33.216H242.184ZM283.226 51.432C278.33 51.432 274.106 50.568 270.554 48.84C267.002 47.064 264.29 44.616 262.418 41.496C260.594 38.328 259.682 34.656 259.682 30.48C259.682 24.912 260.93 19.824 263.426 15.216C265.97 10.608 269.57 6.96 274.226 4.272C278.882 1.536 284.258 0.167998 290.354 0.167998C294.386 0.167998 297.962 0.815998 301.082 2.112C304.202 3.36 306.602 5.16 308.282 7.512L304.538 10.824C301.322 6.888 296.45 4.92 289.922 4.92C284.978 4.92 280.61 6.072 276.818 8.376C273.026 10.632 270.098 13.68 268.034 17.52C265.97 21.36 264.938 25.584 264.938 30.192C264.938 35.232 266.546 39.24 269.762 42.216C273.026 45.192 277.658 46.68 283.658 46.68C290.234 46.68 295.562 44.688 299.642 40.704L302.738 44.232C300.53 46.536 297.722 48.312 294.314 49.56C290.906 50.808 287.21 51.432 283.226 51.432ZM329.591 5.208H311.807L312.743 0.599997H353.567L352.559 5.208H334.847L325.703 51H320.447L329.591 5.208ZM433.267 0.599997L423.187 51H418.075L426.067 11.04L400.003 44.592H397.483L384.019 10.392L375.955 51H370.843L380.923 0.599997H385.243L399.787 38.04L428.587 0.599997H433.267ZM454.009 5.208L450.409 23.136H476.545L475.681 27.672H449.545L445.801 46.392H476.113L475.177 51H439.609L449.689 0.599997H484.249L483.313 5.208H454.009Z" fill="white"/>
+                                </svg>  
+                            </div>
+                        </div>
+
+                        <div class = "contact-box">
+                            <form>
+                                <input type = "text" class = "input-field" placeholder = "Your Name">
+                                <input type = "email" class = "input-field" placeholder = "Your Email">
+                                <input type = "text" class = "input-field" placeholder = "Your Subject">
+                                <textarea type = "text" class = "input-field textarea-field" placeholder = "Your Text"></textarea>
+                                <button type = "button" class = "btn"> Send Message </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <iframe class = "location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49844.8985804903!2d-9.192708958249103!3d38.66483132929061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19351c09ff1135%3A0xfca6dceb642ad67a!2sAlmada!5e0!3m2!1sen!2spt!4v1614986958221!5m2!1sen!2spt" 
+                        width = "500" height = "350" style = "border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>  
+                </div>
+            </div> -->
+
             <div class = "page-body">
                 <div class = "main-page-content">
                     <div class = "error-class">
-                        <img class = "loading-image" src = "logo_transparent_short.png" alt = "Loading Logo Transparent" width = "100">
-                        <div class = "smaller-text"> Still making it, please wait... </div>
-                        <div class = "smaller-text"> Meanwhile, you can contact me on social media. </div>
-                        <div class = "smaller-text"> (Links on the footer) </div>
+                        <img class = "loading-image" src = "images/logo_transparent_short.png" alt = "Loading Logo Transparent" width = "100">
+                        <div> Still making it, please wait... </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </main>
 
         <!-- ************************* Footer ************************* -->
-        <footer class = "footer">
+        <footer class = "footer nav-blur">
             <div class = "linkedin-logo">
-                <a href = "https://www.linkedin.com/in/eduardo-miranda-8105561a6" target = "_blank"><img src = "linkedin.png" alt = "My LinkedIn Account" width = "25"></a>
+                <a href = "https://www.linkedin.com/in/eduardo-miranda-8105561a6" target = "_blank"><img src = "images/linkedin.png" alt = "My LinkedIn Account" width = "25"></a>
             </div>
 
             <div class = "instagram-logo">
-                <a href = "https://www.instagram.com/__boris________/" target = "_blank"><img src = "instagram.png" alt = "My Twitter Account" width = "25"></a>
+                <a href = "https://www.instagram.com/__boris________/" target = "_blank"><img src = "images/instagram.png" alt = "My Twitter Account" width = "25"></a>
             </div>
 
             <div class = "footer-text"> Eduardo Miranda · 2021 </div>
 
             <div class = "twitter-logo">
-                <a href = "https://www.twitter.com/__boris________" target = "_blank"><img src = "twitter.png" alt="My Twitter Account" width = "25"></a>
+                <a href = "https://www.twitter.com/__boris________" target = "_blank"><img src = "images/twitter.png" alt="My Twitter Account" width = "25"></a>
 
             </div>
 
             <div class = "github-logo">
-                <a href = "https://github.com/borisdvlpr" target = "_blank"><img src = "github.png" alt = "My GitHub Account" width = "25"></a>
+                <a href = "https://github.com/borisdvlpr" target = "_blank"><img src = "images/github.png" alt = "My GitHub Account" width = "25"></a>
             </div>
         </footer>
         <!-- *********************** End Footer *********************** -->

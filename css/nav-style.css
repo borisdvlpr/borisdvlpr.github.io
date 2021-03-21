@@ -1,3 +1,5 @@
+@import url("general-body-style.css");
+
 /********************** Nav Bar **********************/
 .nav-bar {
     position: fixed;
@@ -37,7 +39,7 @@
 }
 
 .nav-links a {
-    color: white;                             /* rgb(80, 193, 154); */
+    color: #FFFFFF;                             /* rgb(80, 193, 154); */
     text-decoration: none;                      /* removes any link style, like the underline */
     letter-spacing: 3px;
     font-size: 1.3em;
@@ -124,6 +126,10 @@
         width: 60%;
         transform: translateX(100%);            /* moves the entire burger menu off the screen, to stay hidden */
         transition: transform 0.7s ease-in-out; /* transition of the burger menu. takes 0.7s and makes it smoother on the beginning and the end */
+    }
+
+    .nav-links a {
+        color: rgb(80, 193, 154);
     }
 
     .nav-links li {
