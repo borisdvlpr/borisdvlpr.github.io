@@ -28,10 +28,11 @@
     list-style: none;                           /* removes any list style, like the dots */
     padding: 7px 7px 7px 10px;
     border-radius: 5px;
+    transition: .8s ease background-color;
 }
 
 .nav-links li:hover {
-    animation: blackToWhiteNavBackground 1s forwards;
+    background-color: rgb(80, 193, 154);
 }
 
 .burger-menu-adjustment {
@@ -43,40 +44,6 @@
     text-decoration: none;                      /* removes any link style, like the underline */
     letter-spacing: 3px;
     font-size: 1.3em;
-}
-
-@keyframes blackToWhiteNavBackground {
-    /*
-    0%    {background-color: rgb(31, 40, 51);}
-    5%    {background-color: rgb(43, 43, 43);}
-    10%    {background-color: rgb(55, 55, 55);}
-    15%    {background-color: rgb(67, 67, 67);}
-    20%    {background-color: rgb(79, 79, 79);}
-    25%    {background-color: rgb(91, 91, 91);}
-    30%    {background-color: rgb(103, 103, 103);}
-    35%    {background-color: rgb(115, 115, 115);}
-    40%    {background-color: rgb(127, 127, 127);}
-    45%    {background-color: rgb(139, 139, 139);}
-    50%    {background-color: rgb(151, 151, 151);}
-    55%    {background-color: rgb(163, 163, 163);}
-    60%    {background-color: rgb(175, 175, 175);}
-    65%    {background-color: rgb(187, 187, 187);}
-    70%    {background-color: rgb(199, 199, 199);}
-    75%    {background-color: rgb(211, 211, 211);}
-    80%    {background-color: rgb(223, 223, 223);}
-    85%    {background-color: rgb(235, 235, 235);}
-    90%    {background-color: rgb(249, 249, 249);}
-    95%    {background-color: rgb(255, 255, 255);}
-    100%    {background-color: rgb(255, 255, 255);}
-    */
-
-    from {
-        background-color: black;
-    }
-
-    to {
-        background-color: rgb(80, 193, 154);
-    }
 }
 /******************** End Nav Bar ********************/
 

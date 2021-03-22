@@ -138,11 +138,6 @@ body {
     to { fill: white; }
 }
 
-@keyframes fillButton {                         /* Animation used to fill the "MORE ABOUT ME" button on the landing page */
-    from { background-color: transparent; }
-    to { background-color: rgb(80, 193, 154); }
-}
-
 @keyframes fillImage {                          /* Animation used to fill the image on the landing page */
     form { fill-opacity: 0; }
     /*
@@ -204,6 +199,23 @@ body {
     to {
         opacity: 1;
         transform: translateY(0%);
+    }
+}
+
+@keyframes status {
+    0% { 
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% { 
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% { 
+        opacity: 0;
+        pointer-events: none;
     }
 }
 /******************* End Animations ******************/

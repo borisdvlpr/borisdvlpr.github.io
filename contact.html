@@ -43,7 +43,7 @@
         <!-- *********************** End Nav Bar ********************** -->
 
         <main>
-            <!-- <div class = "page-body">
+            <div class = "page-body">
                 <div class = "main-page-content" id = "contact-page-content">
                     <div class = "column-content">
                         <div class = "text-revealer" id = "revealer3">
@@ -55,31 +55,25 @@
                         </div>
 
                         <div class = "contact-box">
-                            <form>
-                                <input type = "text" class = "input-field" placeholder = "Your Name">
-                                <input type = "email" class = "input-field" placeholder = "Your Email">
-                                <input type = "text" class = "input-field" placeholder = "Your Subject">
-                                <textarea type = "text" class = "input-field textarea-field" placeholder = "Your Text"></textarea>
-                                <button type = "button" class = "btn"> Send Message </button>
+                            <form id = "my-form" action = "https://formspree.io/f/xeqvjezk" method = "POST">
+                                <input type = "text" class = "input-field" id = "Full_Name" name = "Full_Name" placeholder = "Your Name">
+                                <input type = "email" class = "input-field" id = "Email" name = "Email" placeholder = "Your Email">
+                                <input type = "text" class = "input-field" id = "Topic" name = "Topic" placeholder = "Your Subject">
+                                <textarea type = "text" class = "input-field textarea-field" id = "Message" name = "Message" placeholder = "Your Text"></textarea>
+
+                                <div class = "row-content">
+                                    <button type = "submit" class = "btn"> Send Message </button>
+                                    <div id = "status"></div>
+                                </div>
                             </form>
                         </div>
                     </div>
 
                     <iframe class = "location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49844.8985804903!2d-9.192708958249103!3d38.66483132929061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19351c09ff1135%3A0xfca6dceb642ad67a!2sAlmada!5e0!3m2!1sen!2spt!4v1614986958221!5m2!1sen!2spt" 
-                        width = "500" height = "350" style = "border:0;" allowfullscreen="" loading="lazy">
+                        width = "500" height = "350" style = "border: 0;" allowfullscreen = "" loading = "lazy">
                     </iframe>  
                 </div>
-            </div> -->
-
-            <div class = "page-body">
-                <div class = "main-page-content">
-                    <div class = "error-class">
-                        <img class = "loading-image" src = "images/logo_transparent_short.png" alt = "Loading Logo Transparent" width = "100">
-                        <div> Still making it, please wait... </div>
-                    </div>
-                </div>
             </div> 
-        </main>
 
         <!-- ************************* Footer ************************* -->
         <footer class = "footer nav-blur">
@@ -104,6 +98,7 @@
         </footer>
         <!-- *********************** End Footer *********************** -->
         
-        <script src = "app.js" type = "text/javascript"></script>
+        <script src = "side_menu.js" type = "text/javascript"></script>
+        <script src = "email_form.js" type = "text/javascript"></script>
     </body>
 </html>

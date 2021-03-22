@@ -121,10 +121,11 @@
     border-radius: 100px;
     border-width: 1px;
     border-color: rgb(80, 193, 154);
+    transition: .8s ease background-color;
 }
 
 .about-me-button:hover {
-    animation: fillButton 1s ease forwards;
+    background-color: rgb(80, 193, 154);
 }
 
 .about-me-link {
