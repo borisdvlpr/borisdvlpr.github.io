@@ -104,7 +104,7 @@ form {
 
 @media screen and (max-width: 1080px) {
     .page-body {
-        margin-top: 90px;
+        margin-top: 70px;
     }
 
     .main-page-content {
@@ -116,7 +116,7 @@ form {
     }
 
     .contact-box {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     .location-map {
@@ -126,7 +126,7 @@ form {
 
 @media screen and (max-width: 768px) {
     .contact-box {
-        max-width: 330px;
+        max-width: 320px;
         margin-right: 65px;
     }
 }
