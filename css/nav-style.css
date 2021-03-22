@@ -104,6 +104,10 @@
         opacity: 0;                             /* hides the burger menu elements */
     }
 
+    .nav-links li:hover {
+        background-color: transparent;
+    }
+
     .burger {
         display: block;                         /* displays the items on top of each other */
         cursor: pointer;                        /* adds a pointer to the burger menu "icon", which makes it clickable */
