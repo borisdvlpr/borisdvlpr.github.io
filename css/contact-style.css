@@ -126,8 +126,8 @@ form {
 
 @media screen and (max-width: 768px) {
     .contact-box {
-        max-width: 320px;
-        margin-right: 78px;
+        max-width: 280px;
+        margin-right: 120px;
     }
 }
 
