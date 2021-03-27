@@ -97,7 +97,6 @@ form {
 }
 
 .location-map {
-    z-index: -1;
     border-radius: 20px;
     filter: grayscale(100%) invert(100%) contrast(100%);
 }

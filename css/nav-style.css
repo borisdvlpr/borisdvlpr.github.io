@@ -13,6 +13,7 @@
     background-color:  black;                 /* Alt colors: rgb(31, 40, 51); */
     text-transform: uppercase;
     font-weight: 500;                           /* Montserrat font only goes to weight: 500 before getting bold*/
+    z-index: 2;
 }
 
 .main-logo {
