@@ -218,4 +218,22 @@ body {
         pointer-events: none;
     }
 }
+
+@keyframes html_css_figma {
+    from {
+        width: 0;
+
+    } to {
+        width: 25%;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0;
+
+    } to {
+        width: 10%;
+    }
+}
 /******************* End Animations ******************/
